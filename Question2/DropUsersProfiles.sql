@@ -1,2 +1,2 @@
 -- :')
-DROP TABLE IF EXISTS soc_net_db.profiles_table;
+DROP TABLE IF EXISTS soc_net_db.users_profiles;
