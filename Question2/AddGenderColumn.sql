@@ -41,7 +41,7 @@ SET gender = 'M'
 WHERE id = 6;
 -- The syntax had to be something. It had to work.
 UPDATE users_table
-SET gender = 'M'
+SET gender = NULL
 WHERE id = 7;
 -- It sucks, so I'm not using it, but...
 UPDATE users_table
