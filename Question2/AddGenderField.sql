@@ -1,9 +1,17 @@
 -- 'Alter' the table to insert the field.
+-- Attempt to drop the column if it exists:
+-- ALTER TABLE users_table DROP COLUMN IF EXISTS gender;
+--
+-- ...And MySQL disallows it from being so convenient!
+-- Why? Because you DON'T want to be modifying a DB you don't know about!
+-- Well then...
+-- ...We'll then add it right back in!:
 ALTER TABLE users_table
-ADD COLUMN gender CHAR(1);
+ADD COLUMN -- Even an `IF NOT EXISTS` is disallowed! Gah!
+    gender CHAR(1);
 -- ...
 -- ...Just checking!:
-DESCRIBE TABLE users_table;
+DESCRIBE users_table;
 -- (By the way, `BOOLEAN` is a data type, too!:)
 -- ...Anyway:
 --
@@ -47,3 +55,8 @@ WHERE id = 9;
 UPDATE users_table
 SET gender = 'M'
 WHERE id = 10;
+-- Yeah, soooo... moment of truth:
+SELECT *
+FROM users_table;
+-- Prod DB *not* messed up! Hooray!...
+-- ...O-Or is it? HELLO!?

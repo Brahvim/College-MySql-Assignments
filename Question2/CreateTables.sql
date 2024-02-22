@@ -25,3 +25,5 @@ CREATE TABLE IF NOT EXISTS profiles_table(
     id INT PRIMARY KEY,
     user_location VARCHAR(30)
 );
+-- Apparently you *can* set a starting value for `auto_increment`ing stuff:
+-- `ALTER TABLE example_table AUTO_INCREMENT = 1000;`
