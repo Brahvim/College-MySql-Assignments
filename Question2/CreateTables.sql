@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS friends_table(
     user_id INT UNSIGNED NOT NULL,
     friend_name VARCHAR(60)
 );
-CREATE TABLE IF NOT EXISTS profiles_table(
+CREATE TABLE IF NOT EXISTS users_profiles(
     user_id INT,
     id INT PRIMARY KEY,
     user_location VARCHAR(30)
