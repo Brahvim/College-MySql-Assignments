@@ -93,17 +93,9 @@ CREATE TABLE `users_table` (
 
 LOCK TABLES `users_table` WRITE;
 /*!40000 ALTER TABLE `users_table` DISABLE KEYS */;
-INSERT INTO `users_table` VALUES (1,'123 Main Street, Delhi','2023-02-20 07:00:00','2022-01-01 02:30:00','user1','user1@gmail.com',1,'1990-05-14 18:30:00','M'),(2,'456 Park Avenue, Mumbai','2023-02-19 13:15:00','2022-01-05 04:45:00','user2','user2@outlook.com',1,'1988-08-21 18:30:00','F'),(3,'789 Lake Road, Bangalore','2023-02-18 15:50:00','2022-01-10 09:15:00','user3','user3@gmail.com',0,'1995-03-11 18:30:00','M'),(4,'101 Hillside Lane, Kolkata','2023-02-17 03:40:00','2022-01-15 12:00:00','user4','user4@outlook.com',1,'1992-11-07 18:30:00','M'),(5,'202 River View, Chennai','2023-02-16 10:25:00','2022-01-20 15:30:00','user5','user5@protonmail.com',1,'1987-07-03 18:30:00','F'),(6,'303 Valley Street, Hyderabad','2023-02-15 06:15:00','2022-01-25 03:00:00','user6','user6@gmail.com',0,'1998-09-17 18:30:00','M'),(7,'fake location','2023-02-14 14:30:00','2023-02-14 15:37:00','user7','user7@tenminutemail.com',0,'1986-02-27 18:30:00','M'),(8,'505 Garden Avenue, Ahmedabad','2023-02-13 09:05:00','2022-02-04 10:15:00','user8','user8@gmail.com',1,'1991-06-08 18:30:00','M'),(9,'606 Sunset Boulevard, Jaipur','2023-02-12 12:55:00','2022-02-09 13:00:00','user9','user9@outlook.com',0,'1994-11-30 18:30:00','F'),(10,'707 Greenfield Place, Lucknow','2023-02-11 02:20:00','2022-02-14 18:29:59','user10','user10@protonmail.com',1,'1989-04-29 18:30:00','M');
+INSERT INTO `users_table` VALUES (1,'123 Main Street, Delhi','2023-02-20 07:00:00','2022-01-01 02:30:00','user1','user1@gmail.com',1,'1990-05-14 18:30:00','M'),(2,'456 Park Avenue, Mumbai','2023-02-19 13:15:00','2022-01-05 04:45:00','user2','user2@outlook.com',1,'1988-08-21 18:30:00','F'),(3,'789 Lake Road, Bangalore','2023-02-18 15:50:00','2022-01-10 09:15:00','user3','user3@gmail.com',0,'1995-03-11 18:30:00','M'),(4,'101 Hillside Lane, Kolkata','2023-02-17 03:40:00','2022-01-15 12:00:00','user4','user4@outlook.com',1,'1992-11-07 18:30:00','M'),(5,'202 River View, Chennai','2023-02-16 10:25:00','2022-01-20 15:30:00','user5','user5@protonmail.com',1,'1987-07-03 18:30:00','F'),(6,'303 Valley Street, Hyderabad','2023-02-15 06:15:00','2022-01-25 03:00:00','user6','user6@gmail.com',0,'1998-09-17 18:30:00','M'),(7,'fake location','2024-02-24 14:50:20','2024-02-24 15:51:21','user7','user7@tenminutemail.com',0,'2023-12-11 18:30:00',NULL),(8,'505 Garden Avenue, Ahmedabad','2023-02-13 09:05:00','2022-02-04 10:15:00','user8','user8@gmail.com',1,'1991-06-08 18:30:00','M'),(9,'606 Sunset Boulevard, Jaipur','2023-02-12 12:55:00','2022-02-09 13:00:00','user9','user9@outlook.com',0,'1994-11-30 18:30:00','F'),(10,'707 Greenfield Place, Lucknow','2023-02-11 02:20:00','2022-02-14 18:29:59','user10','user10@protonmail.com',1,'1989-04-29 18:30:00','M');
 /*!40000 ALTER TABLE `users_table` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping events for database 'soc_net_db'
---
-
---
--- Dumping routines for database 'soc_net_db'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -114,4 +106,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-02-22 21:15:48
+-- Dump completed on 2024-02-22 21:59:57
