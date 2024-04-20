@@ -1,3 +1,5 @@
+-- Disabling this MySQL InnoDB feature since it doesn't work too nicely with explicit transaction management.
+SET autocommit = 0;
 -- Can also use `BEGIN` instead of `START TRANSACTION`.
 -- PS Transactions can have some characteristics.
 -- (See [ https://dev.mysql.com/doc/refman/8.0/en/commit.html ]).
@@ -19,12 +21,6 @@
 -- `autocommit` is a feature specific to InnoDB (Oracle's "DB engine" running MySQL)
 -- that treats literally EVERY non-erroneous statement as a transaction! You can revert anytime!
 START TRANSACTION READ WRITE;
-CREATE TABLE IF NOT EXISTS new_table(
-    -- Reminder: Primary keys are non-null by default:
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    full_name VARCHAR(15) NOT NULL
-);
-DESCRIBE poly_college_db.new_table;
 INSERT INTO poly_college_db.new_table (full_name)
 VALUES ("Brahvim"),
     ("Shivam"),
@@ -33,3 +29,5 @@ COMMIT;
 SELECT *
 FROM poly_college_db.new_table;
 -- DROP TABLE IF EXISTS poly_college_db.new_table;
+-- ...Back we are:
+SET autocommit = 1;
