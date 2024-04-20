@@ -8,5 +8,5 @@ WHERE TIMESTAMPDIFF(YEAR, dob, CURDATE()) > 21;
 -- This query shows all users; they're all more than `21` years old.
 -- (`32` is a good test given the synthetic data we put in our DB earlier).
 -- ...
--- We select all rows/entries where the timestamp-difference ("`TIMESTAMPDIFF`")
+-- We select all rows/entries where the timestamp-difference ('`TIMESTAMPDIFF`')
 -- of the years in `date_of_birth` and `CURDATE()` is greater than `21`.
