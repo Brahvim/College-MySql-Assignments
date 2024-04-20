@@ -1,0 +1,3 @@
+"Grants for Staff@localhost"
+"GRANT USAGE ON *.* TO `Staff`@`localhost`"
+"GRANT ALL PRIVILEGES ON `poly_college_db`.`poly_college_db` TO `Staff`@`localhost`"
