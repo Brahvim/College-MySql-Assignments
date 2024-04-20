@@ -1,4 +1,4 @@
-SELECT *
+SELECT COUNT(email)
 FROM soc_net_db.users_table
 WHERE email LIKE '%@gmail.com';
 -- This is a very simple pattern match.
@@ -13,3 +13,5 @@ WHERE email LIKE '%@gmail.com';
 --      (THAT'S ACTUALLY SUPER USEFUL!!!)
 -- - PostgreSQL also has its own thingies; use `WHERE your_column ~ '^your_pattern';` 
 --      for case-sensitive matching, or use a `~*` instead of just `~` for a case-*in*sensitive match.
+--
+-- ...Gotta' remember the `count()` function, though.

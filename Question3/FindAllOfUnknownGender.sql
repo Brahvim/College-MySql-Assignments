@@ -9,3 +9,5 @@ WHERE gender IS NULL;
 -- `IS NOT FALSE`,
 -- `IS NOT TRUE`,
 -- `IS NOT NULL`.
+--
+-- Can also write `WHERE gender <=> NULL`!
