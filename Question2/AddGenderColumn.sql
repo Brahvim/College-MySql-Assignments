@@ -1,6 +1,6 @@
 -- 'Alter' the table to insert the field.
 -- Attempt to drop the column if it exists:
--- ALTER TABLE users_table DROP COLUMN IF EXISTS gender;
+-- `ALTER TABLE users_table DROP COLUMN IF EXISTS gender;`
 --
 -- ...And MySQL disallows it from being so convenient!
 -- Why? Because you DON'T want to be modifying a DB you don't know about!
