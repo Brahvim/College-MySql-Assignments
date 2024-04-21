@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS poly_college_db;
 CREATE DATABASE IF NOT EXISTS poly_college_db;
 USE poly_college_db;
 --

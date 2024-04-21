@@ -21,10 +21,12 @@ SET autocommit = 0;
 -- `autocommit` is a feature specific to InnoDB (Oracle's "DB engine" running MySQL)
 -- that treats literally EVERY non-erroneous statement as a transaction! You can revert anytime!
 START TRANSACTION READ WRITE;
+SAVEPOINT db_begin;
 INSERT INTO poly_college_db.new_table (full_name)
 VALUES ("Brahvim"),
     ("Shivam"),
     ("fake person");
+ROLLBACK TO db_begin;
 COMMIT;
 SELECT *
 FROM poly_college_db.new_table;
