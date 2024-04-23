@@ -1,8 +1,8 @@
 DROP DATABASE IF EXISTS book_db;
 CREATE DATABASE book_db;
 USE book_db;
-DROP TABLE IF EXISTS book_db.books;
-CREATE TABLE books (
+DROP TABLE IF EXISTS book_db.author;
+CREATE TABLE author (
     pages INT,
     published_on TIMESTAMP,
     book_title VARCHAR(64),
@@ -12,9 +12,9 @@ CREATE TABLE books (
     author_id INT PRIMARY KEY AUTO_INCREMENT -- `AUTO_INCREMENT` is available only for primary-keys...
     -- Also, DO NOT leave trailing commas!
 );
-DESCRIBE book_db.books;
+DESCRIBE book_db.author;
 -- ...Synthetic data:
-INSERT INTO book_db.books (
+INSERT INTO book_db.author (
         pages,
         author_mobile,
         published_on,
@@ -119,4 +119,4 @@ VALUES (
         '789 St, Rockshore East, Venturas, USA'
     );
 SELECT *
-FROM book_db.books;
+FROM book_db.author;
