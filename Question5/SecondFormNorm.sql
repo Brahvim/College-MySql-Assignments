@@ -19,32 +19,31 @@ CREATE TABLE books_info (
     FOREIGN KEY (author_id) REFERENCES book_db.authors_info(author_id)
 );
 DESCRIBE book_db.books_info;
---
 -- Inserting data! (`authors_info`):
---
-INSERT INTO book_db.authors_info (author_name, author_mobile, author_address, author_id)
+INSERT INTO book_db.authors_info (
+        author_name,
+        author_mobile,
+        author_address,
+        author_id
+    )
 SELECT DISTINCT author_name,
     author_mobile,
     author_address,
     author_id
 FROM book_db.author;
---
--- Inserting data! (`books_info`):
---
 SELECT *
 FROM book_db.author;
-INSERT INTO book_db.authors_info (
+-- Inserting data! (`books_info`):
+INSERT INTO book_db.books_info (
         pages,
-        book_id,
         author_id,
         book_title,
-        published_on,
+        published_on
     )
 SELECT DISTINCT pages,
-    0,
     author_id,
     book_title,
-    published_on,
-    FROM book_db.author;
+    published_on
+FROM book_db.author;
 SELECT *
 FROM book_db.books_info;
